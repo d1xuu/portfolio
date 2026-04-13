@@ -46,6 +46,8 @@
   }
   #hamburger-nav {
     display: flex;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -53,53 +55,137 @@
    TABLET PORTRAIT / LARGE MOBILE (max 768px)
    ======================================== */
 @media screen and (max-width: 768px) {
+
+  /* General sections */
   section {
-    padding: 4rem 5% 3rem;
+    padding: 4rem 6% 3rem;
+    min-height: auto;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .title {
     font-size: 2.4rem;
   }
 
-  .hero-title {
-    font-size: 3.5rem;
+  /* ---- HERO ---- */
+  #profile {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 3rem 6%;
+    min-height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  .hero-content {
-    padding: 0 6% 4rem;
+  .profile-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem;
+    width: 100%;
   }
 
-  .about-grid,
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+  .section__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #profile .title {
+    font-size: 3rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  #socials-container {
+    justify-content: center;
+  }
+
+  /* ---- ABOUT ---- */
+  #about {
+    max-height: none !important;
+    min-height: auto !important;
+    overflow: visible !important;
+    padding: 4rem 6% !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .about-three-col {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .about-photo {
-    min-height: 300px;
-    max-height: 360px;
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-right: 0 !important;
+    gap: 2rem;
+    width: 100%;
   }
 
   .about-photo-col {
-    max-width: 100%;
+    padding: 0 !important;
+    height: 300px;
+    width: 100%;
+  }
+
+  .about-photo-wrap {
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-photo {
+    min-height: unset;
+    max-height: unset;
+    height: 100%;
+    object-position: center 15%;
+  }
+
+  .about-bio-col,
+  .about-hobbies-col {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    align-self: auto !important;
+    width: 100%;
+  }
+
+  /* ---- EDUCATION / OTHER SECTIONS ---- */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
   }
 
   .experience-grid {
     grid-template-columns: 1fr;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
   #experience .section-header {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
+  /* ---- PROJECTS ---- */
   .projects-section .section-header,
   .projects-featured-row,
   .projects-grid-multi {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
   .projects-featured-row {
@@ -110,13 +196,14 @@
     grid-template-columns: 1fr;
   }
 
+  /* ---- HIRE ---- */
   .hire-section .section-header,
   .hire-services-row,
   .hire-gallery-label,
   .hire-gallery,
   .hire-form-wrap {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
   .hire-services-row {
@@ -132,6 +219,7 @@
     gap: 2rem;
   }
 
+  /* ---- CONTACT ---- */
   .contact-cards {
     flex-direction: column;
     align-items: stretch;
@@ -141,6 +229,7 @@
     min-width: unset;
   }
 
+  /* ---- FOOTER ---- */
   .footer-nav {
     flex-wrap: wrap;
     justify-content: center;
@@ -153,19 +242,20 @@
    ======================================== */
 @media screen and (max-width: 480px) {
   section {
-    padding: 3.5rem 4% 2.5rem;
+    padding: 3.5rem 5% 2.5rem;
   }
 
   .title {
     font-size: 2rem;
   }
 
-  .hero-title {
-    font-size: 2.8rem;
+  #profile .title {
+    font-size: 2.6rem;
   }
 
-  .hero-content {
-    padding: 0 5% 3rem;
+  .section__pic-container {
+    width: 170px;
+    height: 170px;
   }
 
   .btn {
