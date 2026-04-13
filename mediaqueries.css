@@ -1,0 +1,208 @@
+/* ========================================
+   TABLET (max 1024px)
+   ======================================== */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 5rem 6% 4rem;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .about-grid {
+    gap: 2rem;
+  }
+
+  .experience-grid,
+  #experience .section-header {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .projects-section .section-header,
+  .projects-featured-row,
+  .projects-grid-multi,
+  .hire-section .section-header,
+  .hire-services-row,
+  .hire-gallery-label,
+  .hire-gallery,
+  .hire-form-wrap {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hire-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE NAV SWITCH (max 900px)
+   ======================================== */
+@media screen and (max-width: 900px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+/* ========================================
+   TABLET PORTRAIT / LARGE MOBILE (max 768px)
+   ======================================== */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 4rem 5% 3rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-content {
+    padding: 0 6% 4rem;
+  }
+
+  .about-grid,
+  .about-three-col {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-photo {
+    min-height: 300px;
+    max-height: 360px;
+  }
+
+  .about-photo-col {
+    max-width: 100%;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #experience .section-header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .projects-section .section-header,
+  .projects-featured-row,
+  .projects-grid-multi {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .projects-featured-row {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid-multi {
+    grid-template-columns: 1fr;
+  }
+
+  .hire-section .section-header,
+  .hire-services-row,
+  .hire-gallery-label,
+  .hire-gallery,
+  .hire-form-wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hire-services-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hire-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hire-form-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-card {
+    min-width: unset;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE (max 480px)
+   ======================================== */
+@media screen and (max-width: 480px) {
+  section {
+    padding: 3.5rem 4% 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-content {
+    padding: 0 5% 3rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.82rem;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .stat-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .exp-card-top {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .hire-services-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hire-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-nav {
+    gap: 0.75rem;
+  }
+}

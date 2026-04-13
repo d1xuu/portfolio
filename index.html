@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dikshant Lamsal</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <img src="assets/favicon.png" alt="Home" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hire">Hire Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <img src="assets/favicon.png" alt="Home" class="logo-img" />
+      </a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#hire" onclick="toggleMenu()">Hire Me</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="profile">
+      <div class="profile-inner">
+        <div class="section__pic-container">
+          <img src="assets/profilepic.jpg" alt="Dikshant Lamsal profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Dikshant<br/>Lamsal</h1>
+          <p class="section__text__p2">Mechanical Engineering Student</p>
+          <p class="section__text__p3">Louisiana Tech University &middot; GPA 3.9/4.0</p>
+          <div class="btn-container">
+            <button class="btn btn-primary" onclick="window.open('assets/CV.pdf')">Download CV</button>
+            <button class="btn btn-outline" onclick="location.href='#contact'">Contact Me</button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/dikshantlamsal/" target="_blank" class="social-link" aria-label="LinkedIn">
+              <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+            <a href="https://www.youtube.com/@DikshantLamsal" target="_blank" class="social-link" aria-label="YouTube">
+              <img src="assets/youtube.png" alt="YouTube" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-section">
+
+      <div class="about-three-col">
+
+        <!-- COL 1: Photo — starts from top of section -->
+        <div class="about-photo-col">
+          <div class="about-photo-wrap">
+            <img src="assets/another pic.JPG" alt="Dikshant Lamsal" class="about-photo" />
+          </div>
+        </div>
+
+        <!-- COL 2: Who I Am (title lives here now) -->
+        <div class="about-bio-col">
+          <p class="section__text__p1">Get To Know</p>
+          <h1 class="title about-title">About Me</h1>
+          <h2 class="about-subheading">Who I Am</h2>
+          <p>I'm Dikshant Lamsal, a Mechanical Engineering student originally from Kathmandu, Nepal, now studying at Louisiana Tech University in Ruston, Louisiana. I'm driven by curiosity — whether that's understanding how things are built, why systems behave the way they do, or how people and cultures connect.</p>
+          <p>As an international student, I bring a global perspective to everything I do. I enjoy bridging the gap between technical problem-solving and people-centered thinking, and I'm passionate about using engineering as a tool to create meaningful impact.</p>
+        </div>
+
+        <!-- COL 3: Hobbies -->
+        <div class="about-hobbies-col">
+          <h2 class="about-subheading">Hobbies &amp; Interests</h2>
+          <div class="hobbies-grid">
+            <div class="hobby-card hobby-music-wrap">
+              <span class="hobby-icon">🎵</span>
+              <div class="hobby-music-text">
+                <span class="hobby-label">Music</span>
+                <a href="https://open.spotify.com/user/31wf533c6wyx5cjctxafgiyatsgu?si=1e9525aa72d54746" target="_blank" class="hobby-spotify-link">Spotify ↗</a>
+              </div>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🎥</span>
+              <span class="hobby-label">Content Creating</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">✂️</span>
+              <span class="hobby-label">Video Editing</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🌍</span>
+              <span class="hobby-label">Traveling</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">📷</span>
+              <span class="hobby-label">Photography</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🎨</span>
+              <span class="hobby-label">Graphic Designing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="fade-section">
+      <div class="section-header">
+        <p class="section__text__p1">My Academic Background</p>
+        <h1 class="title">Education</h1>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>
+            I am a sophomore pursuing a Bachelor of Science in Mechanical Engineering at Louisiana Tech University in Ruston, Louisiana, with a GPA of 3.9 out of 4.0. I have been named to the Dean's List four times — Fall 2024, Winter 2025, Spring 2025, and Fall 2025 — and to the President's List for Winter 2026.
+          </p>
+          <p>
+            Before this, I completed my high school education at Trinity International SS &amp; College in Kathmandu, Nepal, graduating with a GPA of 3.85, and earned a perfect 4.0 in 10th grade.
+          </p>
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-number">3.9</span>
+              <span class="stat-label">Current GPA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-cards">
+          <div class="edu-card">
+            <div class="edu-icon">
+              <img src="./assets/education.png" alt="Education" class="icon" />
+            </div>
+            <div class="edu-info">
+              <span class="edu-degree">B.S. Mechanical Engineering</span>
+              <span class="edu-school">Louisiana Tech University</span>
+              <span class="edu-location">Ruston, Louisiana</span>
+              <span class="edu-date">Sept 2024 – Present</span>
+              <span class="edu-gpa">CGPA: 3.9 / 4.0</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">
+              <img src="./assets/education.png" alt="Education" class="icon" />
+            </div>
+            <div class="edu-info">
+              <span class="edu-degree">High School</span>
+              <span class="edu-school">Trinity International SS &amp; College</span>
+              <span class="edu-location">Kathmandu, Nepal</span>
+              <span class="edu-date">Aug 2020 – June 2022</span>
+              <span class="edu-gpa">CGPA: 3.85 / 4.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="fade-section">
+      <div class="section-header">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+      </div>
+
+      <div class="experience-grid">
+        <div class="exp-column">
+          <h2 class="exp-column-title">Engineering</h2>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <h3 class="exp-role">IT Support Specialist</h3>
+              <span class="exp-badge">Engineering</span>
+            </div>
+            <p class="exp-org">Orbit English School</p>
+            <p class="exp-location">Bhaktapur, Nepal</p>
+          </div>
+        </div>
+
+        <div class="exp-column">
+          <h2 class="exp-column-title">Leadership &amp; Outreach</h2>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <h3 class="exp-role">Social Media Manager</h3>
+              <span class="exp-badge">Current</span>
+            </div>
+            <p class="exp-org">Office of International Affairs</p>
+            <p class="exp-location">Louisiana Tech University</p>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <h3 class="exp-role">Public Relations Officer</h3>
+              <span class="exp-badge">Current</span>
+            </div>
+            <p class="exp-org">International Student Association 2025/26</p>
+            <p class="exp-location">Louisiana Tech University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="fade-section projects-section">
+
+      <!-- TWO FEATURED PROJECTS — full first page -->
+      <div class="projects-featured-wrapper">
+        <div class="section-header">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+        </div>
+        <div class="projects-featured-row">
+
+          <!-- Featured 1: Senses Lamp -->
+          <div class="project-featured-card">
+            <div class="project-featured-img">
+              <img src="assets/senseslamp.png" alt="Senses Lamp" />
+              <div class="project-featured-overlay">
+                <span class="project-tag-pill">Spring 2025 &middot; Featured</span>
+              </div>
+            </div>
+            <div class="project-featured-body">
+              <h2 class="project-featured-title">Senses Lamp</h2>
+              <p class="project-featured-desc">Co-designed and built a smart home device featuring sunrise simulation, adjustable lighting, alarm, Bluetooth speaker, phone charging, and environmental displays. Used SolidWorks to design the lamp's base and neck structure.</p>
+              <div class="project-tech-row">
+                <span class="tech-pill">SolidWorks</span>
+                <span class="tech-pill">Smart Home</span>
+                <span class="tech-pill">Hardware Design</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary project-btn" onclick="location.href='https://youtu.be/w3P-7IcspE8'">Watch on YouTube</button>
+                <button class="btn btn-outline project-btn" onclick="window.open('assets/journalsenseslamp.pdf')">Read Journal</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 2: Neck Posture Maintainer -->
+          <div class="project-featured-card">
+            <div class="project-featured-img project-img-placeholder">
+              <div class="img-placeholder-inner">
+                <span>📸</span>
+                <p>Add image: assets/neckposture.png</p>
+              </div>
+              <div class="project-featured-overlay">
+                <span class="project-tag-pill">Coming Soon &middot; Featured</span>
+              </div>
+            </div>
+            <div class="project-featured-body">
+              <h2 class="project-featured-title">Neck Posture Maintainer</h2>
+              <p class="project-featured-desc">hmmm</p>
+              <div class="project-tech-row">
+                <span class="tech-pill">Hardware</span>
+                <span class="tech-pill">Design</span>
+                <span class="tech-pill">Engineering</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-outline project-btn" disabled style="opacity:0.45;cursor:not-allowed;">YouTube — Coming Soon</button>
+                <button class="btn btn-outline project-btn" disabled style="opacity:0.45;cursor:not-allowed;">Journal — Coming Soon</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- More Projects — bottom right of featured page -->
+        <div class="more-projects-row">
+          <a href="#projects-small" class="more-projects-link">
+            More Projects
+            <img src="assets/arrow.png" alt="arrow" class="more-projects-arrow" />
+          </a>
+        </div>
+      </div>
+
+      <!-- THREE SMALL PROJECT CARDS -->
+      <div class="projects-grid-multi" id="projects-small">
+
+        <div class="project-card-multi">
+          <div class="project-card-header">
+            <span class="project-tag">Summer 2025</span>
+            <h3 class="project-card-title">Nuclear Power Plant Mapping</h3>
+          </div>
+          <p class="project-card-desc">Collaborated with Dr. Chris Jacobsen (Research Professor, Northwestern University) on data collection for a book on energy, climate, and nuclear power. Used Python to process data and support creation of a copyright-free global map with reactor sites sized by capacity and color-coded by decade.</p>
+          <div class="project-tech-row">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Spyder</span>
+            <span class="tech-pill">Data Visualization</span>
+            <span class="tech-pill">Research</span>
+          </div>
+        </div>
+
+        <div class="project-card-multi">
+          <div class="project-card-header">
+            <span class="project-tag">Fall 2025</span>
+            <h3 class="project-card-title">Truss Design &amp; Optimization</h3>
+          </div>
+          <p class="project-card-desc">Designed a structural truss in SolidWorks, created DXF parts, and 3D printed each component. Assembled all parts by hand and optimized members using I and T shaped cross-sections to increase strength while minimizing weight.</p>
+          <div class="project-tech-row">
+            <span class="tech-pill">SolidWorks</span>
+            <span class="tech-pill">3D Printing</span>
+            <span class="tech-pill">Structural Analysis</span>
+          </div>
+          <div class="btn-container" style="margin-top: 0.25rem;">
+            <button class="btn btn-outline project-btn" onclick="window.open('assets/truss.pdf')">View Report ↗</button>
+          </div>
+        </div>
+
+        <div class="project-card-multi">
+          <div class="project-card-header">
+            <span class="project-tag">ENGR 120 &amp; 121</span>
+            <h3 class="project-card-title">Arduino Engineering Projects</h3>
+          </div>
+          <p class="project-card-desc">Two hands-on builds: a smart car responding to directional inputs via photoresistors; and a canister oven with thermostat control, LED temperature indicator, and auto-activating fan to maintain set temperature.</p>
+          <div class="project-tech-row">
+            <span class="tech-pill">Arduino</span>
+            <span class="tech-pill">Sensors</span>
+            <span class="tech-pill">Robotics</span>
+            <span class="tech-pill">Thermodynamics</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HIRE ME SECTION -->
+    <section id="hire" class="fade-section hire-section">
+      <div class="section-header">
+        <p class="section__text__p1">Work With Me</p>
+        <h1 class="title">Hire Me</h1>
+        <p class="hire-intro">Available for content creation, photography, video editing, and event coverage. Fill out the form and I'll get back to you shortly.</p>
+      </div>
+
+      <!-- SERVICES ROW -->
+      <div class="hire-services-row">
+        <div class="hire-service-card">
+          <span class="hire-service-icon">📷</span>
+          <span class="hire-service-label">Photography</span>
+        </div>
+        <div class="hire-service-card">
+          <span class="hire-service-icon">🎥</span>
+          <span class="hire-service-label">Content Creation</span>
+        </div>
+        <div class="hire-service-card">
+          <span class="hire-service-icon">✂️</span>
+          <span class="hire-service-label">Video Editing</span>
+        </div>
+        <div class="hire-service-card">
+          <span class="hire-service-icon">🎬</span>
+          <span class="hire-service-label">Event Coverage</span>
+        </div>
+      </div>
+
+      <!-- WORK GALLERY — commented out, uncomment when ready to add photos
+      <h2 class="hire-gallery-label">My Work</h2>
+      <div class="hire-gallery">
+        <div class="gallery-item gallery-placeholder"><span>📸</span><p>assets/work1.jpg</p></div>
+        <div class="gallery-item gallery-placeholder"><span>📸</span><p>assets/work2.jpg</p></div>
+        <div class="gallery-item gallery-placeholder"><span>📸</span><p>assets/work3.jpg</p></div>
+        <div class="gallery-item gallery-placeholder"><span>📸</span><p>assets/work4.jpg</p></div>
+      </div>
+      -->
+
+      <!-- BOOKING FORM -->
+      <div class="hire-form-wrap">
+        <div class="hire-form-info">
+          <h2 class="hire-form-heading">Book a Session</h2>
+          <p>Tell me about your project — I'll get back to you as soon as possible.</p>
+          <p class="hire-form-note">Every submission sends me a notification automatically.</p>
+        </div>
+        <div class="hire-booking-card">
+          <div class="hire-booking-icon">📋</div>
+          <h3 class="hire-booking-title">Ready to work together?</h3>
+          <p class="hire-booking-desc">Fill out a quick form with your event details, date, and what you're looking for. Takes less than 2 minutes.</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRj_bfbJRsuLi3o4inz8653OP26BI1oatKw6B6VilTPHtsBw/viewform"
+            target="_blank"
+            class="btn btn-primary hire-booking-btn"
+          >
+            Fill Out Booking Form ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="fade-section">
+      <div class="section-header">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+      </div>
+      <div class="contact-cards">
+        <a href="/cdn-cgi/l/email-protection#a7c3ceccd4cfc6c9d3cbc6cad4c6cbe7c8d2d3cbc8c8cc89c4c8ca" class="contact-card">
+          <img src="./assets/email.png" alt="Email" class="icon contact-icon" />
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><span class="__cf_email__" data-cfemail="284c41435b4049465c4449455b494468475d5c44474743064b4745"><span class="__cf_email__" data-cfemail="83efe2eef0e2efe7eae8f0ebe2edf7b2c3e4eee2eaefade0ecee">[email&#160;protected]</span></span></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/dikshantlamsal/" target="_blank" class="contact-card">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">dikshantlamsal</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-logo">Dikshant Lamsal</span>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a h
