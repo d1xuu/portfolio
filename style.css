@@ -620,7 +620,7 @@ section {
 .about-photo-col {
   display: flex;
   flex-direction: column;
-  padding: 15% 0 3% 3%;
+  padding: 15% 0 5% 8%;
   height: 100%;
   overflow: hidden;
 }
