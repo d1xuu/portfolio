@@ -213,7 +213,7 @@ a {
 }
 
 .menu-links.open {
-  max-height: 280px;
+  max-height: 420px;
   opacity: 1;
   pointer-events: all;
 }
