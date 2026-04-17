@@ -4,21 +4,55 @@ document.querySelectorAll('.logo').forEach(logo => {
   logo.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 });
 
-// Hamburger menu toggle
+// Hamburger menu — global function so onclick in HTML still works
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
+  if (!menu || !icon) return;
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
 
-// Close menu when clicking outside
-document.addEventListener("click", function (e) {
-  const nav = document.getElementById("hamburger-nav");
-  if (nav && !nav.contains(e.target)) {
-    document.querySelector(".menu-links")?.classList.remove("open");
-    document.querySelector(".hamburger-icon")?.classList.remove("open");
-  }
+// Also attach via JS with stopPropagation for mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const icon = document.querySelector(".hamburger-icon");
+  const menu = document.querySelector(".menu-links");
+  if (!icon || !menu) return;
+
+  icon.addEventListener("click", function (e) {
+    e.stopPropagation();
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  });
+
+  // Close when a nav link is tapped
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function () {
+      menu.classList.remove("open");
+      icon.classList.remove("open");
+    });
+  });
+
+  // Close when tapping outside
+  document.addEventListener("click", function (e) {
+    if (!icon.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("open");
+      icon.classList.remove("open");
+    }
+  });
+});
+
+// When a nav link is clicked, immediately reveal the target section
+// so it's never invisible when scrolled into view via anchor
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function () {
+    const targetId = this.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.classList.remove('will-animate');
+      target.classList.add('visible');
+    }
+  });
 });
 
 // Fade-in sections on scroll
@@ -33,7 +67,7 @@ const fadeObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0, rootMargin: "0px 0px -60px 0px" }
+  { threshold: 0, rootMargin: "0px 0px 0px 0px" }
 );
 fadeSections.forEach((section) => fadeObserver.observe(section));
 
